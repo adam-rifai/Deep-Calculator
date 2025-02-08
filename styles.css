@@ -1,0 +1,78 @@
+/* Basic reset to remove default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a background color and center the calculator on the page */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+/* Calculator container styling */
+.calculator {
+  width: 300px;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Display screen styling */
+#display {
+  width: 100%;
+  height: 50px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-align: right;
+  padding: 10px;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Button grid layout */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Button styling */
+button {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #555;
+}
+
+/* Special styling for the equals button */
+.equals {
+  grid-column: span 1;
+  background-color: #f39c12;
+}
+
+.equals:hover {
+  background-color: #e67e22;
+}
+
+/* Special styling for the zero button */
+.zero {
+  grid-column: span 2;
+}
